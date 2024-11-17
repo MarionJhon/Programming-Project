@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Display</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleDisp.css">
+    <script src="https://kit.fontawesome.com/8cafc02627.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="title">Input Information</div>
+            <div class="input-group">
+                <input type="text" class="input" id="fullname" name="fullname" autocomplete="off" placeholder="" required>
+                <label for="fullname" class="label">Fullname</label>
+            </div>
+            <div class="input-group">
+                <input type="date" class="input" id="birthday" name="birthday" autocomplete="off" placeholder="" required>
+                <label for="Birthday" class="label">Birthday</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input" id="age" name="age" autocomplete="off" placeholder="" readonly>
+                <label for="Age" class="label">Age</label>
+            </div>
+            <div class="input-group">
+                <select name="gender" class="input" id="gender" required>
+                    <option value="" disabled selected></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <label for="Gender" class="label">Sex</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="input" id="address" name="address" autocomplete="off" placeholder="" required>
+                <label for="Address" class="label">Address</label>
+            </div>
+            <button type="submit" class="button" id="submitBtn">Submit</button>
+        </div>
+        <div class="box2" id="hiddenBox">
+            <div class="title">Output Information</div>
+            <div class="disp-group">
+                <label for="" class="label-Disp">Fullname: </label>
+                <p class="output" id="fullname-disp"></p>
+            </div>
+            <div class="disp-group">
+                <label for="" class="label-Disp">Birthday: </label>
+                <p class="output" id="birthday-disp"></p>
+            </div>
+            <div class="disp-group">
+                <label for="" class="label-Disp">Age: </label>
+                <p class="output" id="age-disp"></p>
+            </div>
+            <div class="disp-group">
+                <label for="" class="label-Disp">Sex: </label>
+                <p class="output" id="gender-disp"></p>
+            </div>
+            <div class="disp-group">
+                <label for="" class="label-Disp">Address: </label>
+                <p class="output" id="address-disp"></p>
+            </div>
+            <button class="close" id="closeBtn"><i class="fa-solid fa-circle-xmark"></i></button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        <p>Made by Marion Jhon Agapay</p>
+    </footer>
+    <script src="/Display Input/responsive.js"></script>
+    <script src="/Display Input/displayOutput.js"></script>
+</body>
+</html>

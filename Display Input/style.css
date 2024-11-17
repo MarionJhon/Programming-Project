@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(120, 157, 188);
+}
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 0 15px gray;
+}
+
+.input-group{
+    position: relative;
+    margin: 20px 0;
+    width: 20rem;
+    height: 3rem;
+}
+
+.input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #858282;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: inherit;
+    color: #1f1d1d;
+    outline: none;
+    padding: 0 1.25rem;
+    background: none;
+    transition: all 160ms ease-in;
+}
+
+.input:hover{
+    border-color: rgb(122, 178, 211);
+}
+
+.input:focus{
+    border-color: rgb(74, 98, 138);
+}
+
+.label{
+    position: absolute;
+    left: 1rem;
+    top: 0.6rem;
+    padding: 0 0.5rem;
+    color: #808080;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in font-size 200ms ease-in;
+    background-color:rgb(223, 242, 235);
+    ;
+}
+
+.input:focus ~ .label, .input:not(:placeholder-shown).input:not(:focus) ~ .label{
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11%;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    border: 2px solid #858282;
+    border-radius: 0.5rem;
+}
+
+.button:hover{
+    background-color: rgb(29, 199, 120);
+    cursor: pointer;
+}
+
+.box1{
+    padding: 25px;
+    background-color: rgb(223, 242, 235);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgb(41, 43, 42);
+}
